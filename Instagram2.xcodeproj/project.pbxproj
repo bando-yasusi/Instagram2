@@ -6,8 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7EB6444F2E04F0920001A245 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB6444E2E04F0920001A245 /* LoginViewController.swift */; };
+		7EB644512E04F0BA0001A245 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB644502E04F0BA0001A245 /* HomeViewController.swift */; };
+		7EB644532E04F0DA0001A245 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB644522E04F0DA0001A245 /* ImageSelectViewController.swift */; };
+		7EB644552E04F0FB0001A245 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB644542E04F0FB0001A245 /* PostViewController.swift */; };
+		7EB644572E04F1160001A245 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB644562E04F1160001A245 /* SettingViewController.swift */; };
+		7EB644592E04F8350001A245 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB644582E04F8350001A245 /* TabBarController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7EB644362E04EEED0001A245 /* Instagram2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB6444E2E04F0920001A245 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7EB644502E04F0BA0001A245 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7EB644522E04F0DA0001A245 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		7EB644542E04F0FB0001A245 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		7EB644562E04F1160001A245 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		7EB644582E04F8350001A245 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +60,12 @@
 		7EB6442D2E04EEED0001A245 = {
 			isa = PBXGroup;
 			children = (
+				7EB644582E04F8350001A245 /* TabBarController.swift */,
+				7EB644562E04F1160001A245 /* SettingViewController.swift */,
+				7EB644542E04F0FB0001A245 /* PostViewController.swift */,
+				7EB644502E04F0BA0001A245 /* HomeViewController.swift */,
+				7EB644522E04F0DA0001A245 /* ImageSelectViewController.swift */,
+				7EB6444E2E04F0920001A245 /* LoginViewController.swift */,
 				7EB644382E04EEED0001A245 /* Instagram2 */,
 				7EB644372E04EEED0001A245 /* Products */,
 			);
@@ -132,6 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB644532E04F0DA0001A245 /* ImageSelectViewController.swift in Sources */,
+				7EB644592E04F8350001A245 /* TabBarController.swift in Sources */,
+				7EB644512E04F0BA0001A245 /* HomeViewController.swift in Sources */,
+				7EB644552E04F0FB0001A245 /* PostViewController.swift in Sources */,
+				7EB644572E04F1160001A245 /* SettingViewController.swift in Sources */,
+				7EB6444F2E04F0920001A245 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,9 +187,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.yasusi.bando.Instagram2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -188,9 +219,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.yasusi.bando.Instagram2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
