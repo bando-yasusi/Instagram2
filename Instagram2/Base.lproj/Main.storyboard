@@ -102,6 +102,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="ログイン" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleLoginButton:" destination="7z4-U0-lU7" eventType="touchUpInside" id="kfl-CL-Hr4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSP-rE-MJg">
                                 <rect key="frame" x="46.666666666666657" y="321" width="300" height="40"/>
@@ -110,6 +113,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="アカウント作成" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleCreateAccountButton:" destination="7z4-U0-lU7" eventType="touchUpInside" id="way-zD-5hS"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="アカウント作成時は表示名を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r9u-4s-lbQ">
                                 <rect key="frame" x="46.666666666666657" y="227" width="300" height="34"/>
@@ -135,6 +141,11 @@
                             <constraint firstItem="Y1y-ok-L0Z" firstAttribute="top" secondItem="r9u-4s-lbQ" secondAttribute="bottom" constant="10" id="wAc-ix-WjI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="displayNameTextField" destination="r9u-4s-lbQ" id="4kb-BP-0MY"/>
+                        <outlet property="mailAddressTextField" destination="zLN-RR-kuX" id="QsM-9e-eV8"/>
+                        <outlet property="passwordTextField" destination="z1A-eP-msE" id="089-5G-Szg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gc6-eh-UWX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
