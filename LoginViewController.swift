@@ -10,10 +10,13 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    // ログインボタンをタップしたときに呼ばれるメソッド
+    @IBAction func handleLoginButton(_ sender: Any) {
 
     }
-    
-    @IBAction func handleLoginButton(_ sender: Any) {
+    // アカウント作成ボタンをタップしたときに呼ばれるメソッド
+    @IBAction func handleCreateAccountButton(_ sender: Any) {
         if let address = mailAddressTextField.text, let password = passwordTextField.text, let displayName = displayNameTextField.text {
 
                     // アドレスとパスワードと表示名のいずれかでも入力されていない時は何もしない
@@ -50,26 +53,7 @@ class LoginViewController: UIViewController {
                         }
                     }
                 }
-        // 表示名を設定する
-                        let user = Auth.auth().currentUser
-                        if let user = user {
-                            let changeRequest = user.createProfileChangeRequest()
-                            changeRequest.displayName = displayName
-                            changeRequest.commitChanges { error in
-                                if let error = error {
-                                    // プロフィールの更新でエラーが発生
-                                    print("DEBUG_PRINT: " + error.localizedDescription)
-                                    return
-                                }
-                                print("DEBUG_PRINT: [displayName = \(user.displayName!)]の設定に成功しました。")
-
-                                // 画面を閉じてタブ画面に戻る
-                                self.dismiss(animated: true, completion: nil)
-                            }
-                        }
-
-    }
-    @IBAction func handleCreateAccountButton(_ sender: Any) {
+        
     }
     
    
